@@ -105,17 +105,10 @@ body {
     opacity: 1;
 }
 
-.btn-top {
-    gap: 2rem;
-}
-
-.btn-top button {
+button:focus,
+button:active button:visited {
+    outline: none;
     border: none;
-    outline: none;
-}
-
-.btn-group:active button {
-    outline: none;
 }
 
 header {
