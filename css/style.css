@@ -163,7 +163,9 @@ section .row {
   * {
     text-align: center;
   }
-
+  .row {
+    --bs-gutter-x: 0;
+  }
   .futuer-section .row,
   .phone-section .row {
     flex-direction: column-reverse !important;
@@ -182,5 +184,22 @@ section .row {
     margin-top: -70px;
     width: 100%;
     padding: 0;
+  }
+  .header-button-div button {
+    font-size: 10px;
+    padding: 5px 10px !important;
+  }
+  .text-col b {
+    border: soli d;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Overpass;
+  }
+
+  .text-col p {
+    font-size: 14px;
+  }
+  header p {
+    font-size: 10px;
   }
 }
