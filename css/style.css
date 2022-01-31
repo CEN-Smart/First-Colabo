@@ -112,7 +112,8 @@ button:active button:visited {
 }
 
 header {
-    background: linear-gradient( rgb(255, 82, 93, .9), rgb(255, 82, 93, .9)), url(../images/bg-pattern-intro-desktop.svg);
+    background: linear-gradient( rgb(255, 82, 93), rgb(255, 82, 93)), url(../images/bg-pattern-intro-desktop.svg);
+    background-blend-mode: lighten;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
