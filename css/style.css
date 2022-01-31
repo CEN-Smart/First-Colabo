@@ -118,3 +118,12 @@ header {
     background-size: cover;
     border-bottom-left-radius: 4rem;
 }
+
+footer a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.page-footer {
+    border-top-right-radius: 4rem;
+}
