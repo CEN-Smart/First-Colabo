@@ -162,6 +162,11 @@ section .row {
     width: 350px;
 }
 
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media screen and (max-width: 375px) {
     * {
         text-align: center;
