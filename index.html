@@ -1,346 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./images/favicon-32x32.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
     <title>Blogr - A Modern Publishing Platform</title>
-  </head>
+</head>
 
-  <body>
+<body>
+
+    <!-- TODO HEADER AND START -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="./images/logo.svg" alt="Blogr Logo"
-          /></a>
-          <button
-            class="navbar-toggler collapsed d-flex d-lg-none justify-content-around flex-column"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMain"
-            aria-controls="navbarMain"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img style="width: 60%;" src="./images/logo.svg" alt="Blogr Logo" /></a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none justify-content-around flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
             <span class="toggler-icon top-bar"></span>
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarMain">
-            <ul class="navbar-nav text-center mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Product
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Product</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="navbar-nav text-center mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Company
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Company</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="navbar-nav text-center mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Company</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Contact
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="d-flex ms-auto justify-content-around">
-              <button
-                class="btn text-light px-4 py-2 btn-custom mx-4"
-                type="button"
-              >
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto justify-content-around">
+                        <button class="btn text-light px-4 py-2 btn-custom mx-4" type="button">
                 Login
               </button>
-              <button
-                class="btn btn-light text-danger rounded-pill px-4 py-2"
-                type="button"
-              >
+                        <button class="btn btn-light text-danger rounded-pill px-4 py-2" type="button">
                 Sign up
               </button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
-      <div class="text-light text-center mt-4 py-5 px-4">
-        <h1 class="display-md-4">A modern publishing platform</h1>
-        <p>Grow your own audience and build your own brand</p>
-        <div
-          class="d-flex justify-content-center align-items-center header-button-div"
-          style="gap: 1rem"
-        >
-          <button
-            class="btn btn-light text-danger rounded-pill px-4 py-2"
-            type="button"
-          >
+        </nav>
+        <div class="text-light text-center mt-4 py-5 px-4">
+            <h1 class="display-md-4">A modern publishing platform</h1>
+            <p>Grow your own audience and build your own brand</p>
+            <div class="d-flex justify-content-center align-items-center header-button-div" style="gap: 1rem">
+                <button class="btn btn-light text-danger rounded-pill px-4 py-2" type="button">
             Start for Free
           </button>
-          <button
-            class="btn btn-outline-light rounded-pill px-4 py-2"
-            type="button"
-          >
+                <button class="btn btn-outline-light rounded-pill px-4 py-2" type="button">
             Learn More
           </button>
+            </div>
         </div>
-      </div>
     </header>
+    <!-- TODO HEADER AND NAVBAR END  -->
 
-    <section class="futuer-section">
-      <h1 class="text-center my-4">Designed for the futuer</h1>
 
-      <div class="conta iner">
-        <div class="row">
-          <div class="col-md-6 text-col d-flex">
-            <div class="my-auto">
-              <b class="d-block my-3">Introducing an extensible editor</b>
-              <p>
-                Blogr features an exceedingly intuitive interface which lets you
-                focus on one thing: creating content. The editor supports
-                management of multiple blogs and allows easy manipulation of
-                embeds such as images, videos, and Markdown. Extensibility with
-                plugins and themes provide easy ways to add functionality or
-                change the looks of a blog.
-              </p>
-              <b class="d-block my-3">Robuse contact management </b>
-              <p>
-                Flexible content management enables users to easily move through
-                posts. Increase the usability of your blog by adding customized
-                categories, sections, format, or flow. With this functionality,
-                you're in full control.
-              </p>
+    <!-- TODO FUTURE SECTION START -->
+    <section class="future-section">
+        <h1 class="text-center my-4">Designed for the future</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-col d-flex">
+                    <div class="my-auto">
+                        <b class="d-block my-3">Introducing an extensible editor</b>
+                        <p>
+                            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins
+                            and themes provide easy ways to add functionality or change the looks of a blog.
+                        </p>
+                        <b class="d-block my-3">Robuse contact management </b>
+                        <p>
+                            Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 image-col">
+                    <img src="images/illustration-editor-desktop.svg" class="w-100 d-none d-md-block" />
+                    <img src="images/illustration-editor-mobile.svg" class="w-100 d-block d-md-none" />
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 image-col">
-            <img
-              src="images/illustration-editor-desktop.svg"
-              class="w-100 d-none d-md-block"
-            />
-            <img
-              src="images/illustration-editor-mobile.svg"
-              class="w-100 d-block d-md-none"
-            />
-          </div>
         </div>
-      </div>
     </section>
 
+    <!-- TODO FUTURE SECTION END -->
+
+
+    <!-- TODO PHONE SECTION START -->
     <section class="phone-section">
-      <div class="row flex-row-reverse">
-        <div class="col-md-6 text-col d-flex">
-          <div class="mt-md-4">
-            <b class="d-block my-3">State of the art infrasturcture</b>
-            <p>
-             With reliability and speed in mind, worldwide daya centers provide the backbone for ultra-fast connectivity. this ensures your site will load instantly. no matter where your reader are, Keeping your site competitive.
-            </p>
-          </div>
+        <div class="row flex-row-reverse">
+            <div class="col-md-6 text-col d-flex">
+                <div class="mt-md-4">
+                    <b class="d-block my-3">State of the art infrasturcture</b>
+                    <p>
+                        With reliability and speed in mind, worldwide daya centers provide the backbone for ultra-fast connectivity. this ensures your site will load instantly. no matter where your reader are, Keeping your site competitive.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 image-col">
+                <img src="images/illustration-phones.svg" class="w-100" />
+            </div>
         </div>
-        <div class="col-md-6 image-col">
-          <img src="images/illustration-phones.svg" class="w- 100" />
-        </div>
-      </div>
     </section>
+    <!-- TODO PHONE SECTION END -->
 
+    <!-- TODO STATE SECTION START -->
     <section class="state-section">
-      <div class="cont ainer">
-        <div class="row">
-          <div class="col-md-6 image-col">
-            <img
-              src="images/illustration-laptop-desktop.svg"
-              class="w-100 d-none d-md-block"
-            />
-            <img
-              src="images/illustration-laptop-mobile.svg"
-              class="w-100 d-block d-md-none"
-            />
-          </div>
-          <div class="col-md-6 text-col d-flex">
-            <div class="my-auto">
-              <b class="d-block my-3">Free, open, simple</b>
-              <p>
-                Bloger is a free and open source application backed by large community of helpful developers. It supports features such as code syntax highlighting tools, abd works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-              </p>
-              <b class="d-block my-3">Powerful tooling </b>
-              <p>
-                Batteries included. we built a simple ans straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
-              </p>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 image-col">
+                    <img src="images/illustration-laptop-desktop.svg" class="w-100 d-none d-md-block" />
+                    <img src="images/illustration-laptop-mobile.svg" class="w-100 d-block d-md-none" />
+                </div>
+                <div class="col-md-6 text-col d-flex">
+                    <div class="my-auto">
+                        <b class="d-block my-3">Free, open, simple</b>
+                        <p>
+                            Bloger is a free and open source application backed by large community of helpful developers. It supports features such as code syntax highlighting tools, abd works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+                            learn.
+                        </p>
+                        <b class="d-block my-3">Powerful tooling </b>
+                        <p>
+                            Batteries included. we built a simple ans straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <!-- Footer -->
+    <!-- TODO STATE SECTION END -->
 
-<footer class="page-footer w-100 p-3 mb-2 bg-dark  text-white pt-5 rounded-right">
+    <!--TODO FOOTER START -->
+    <footer class="page-footer w-100 p-3 mb-2 bg-dark  text-white pt-5 rounded-right">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center ">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center ">
 
-        <!-- Grid row -->
-        <div class="row">
+            <!-- Grid row -->
+            <div class="row">
 
-            <!-- Grid column -->
-            <div class="col-md-3 mt-md-0 mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 mt-md-0 mt-3">
 
-                <!-- Content -->
-                <h5 class="black">Blogr</h5>
+                    <!-- Content -->
+                    <a class="navbar-brand" href="#"><img style="width: 20%;" src="./images/logo.svg" alt="Blogr Logo" /></a>
+
+                </div>
+                <!-- Grid column -->
+
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5>Products</h5>
+                    <br>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#!">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="#!">Features</a>
+                        </li>
+                        <li>
+                            <a href="#!">Integrations</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5>Company</h5>
+                    <br>
+
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="#!">About</a>
+                        </li>
+                        <li>
+                            <a href="#!">Team</a>
+                        </li>
+                        <li>
+                            <a href="#!">Blogr</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5>Connect</h5>
+                    <br>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#!">Newsletter</a>
+                        </li>
+                        <li>
+                            <a href="#!">Linkedln</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                    </ul>
+
+                </div>
 
             </div>
-            <!-- Grid column -->
-
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5>Products</h5>
-                <br>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Overview</a>
-                    </li>
-                    <li>
-                        <a href="#!">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#!">Marketplace</a>
-                    </li>
-                    <li>
-                        <a href="#!">Features</a>
-                    </li>
-                    <li>
-                        <a href="#!">Integrations</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5>Company</h5>
-                <br>
-
-                <ul class="list-unstyled ">
-                    <li>
-                        <a href="#!">About</a>
-                    </li>
-                    <li>
-                        <a href="#!">Team</a>
-                    </li>
-                    <li>
-                        <a href="#!">Blogr</a>
-                    </li>
-                    <li>
-                        <a href="#!">Careers</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5>Connect</h5>
-                <br>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#!">Newsletter</a>
-                    </li>
-                    <li>
-                        <a href="#!">Linkedln</a>
-                    </li>
-                    <li>
-                        <a href="#!">Careers</a>
-                    </li>
-                </ul>
-
-            </div>
+            <!-- Grid row -->
 
         </div>
-        <!-- Grid row -->
+        <!-- Footer Links -->
 
-    </div>
-    <!-- Footer Links -->
+        <!-- Copyright -->
+        </div>
+        <!-- Copyright -->
 
-    <!-- Copyright -->
-    </div>
-    <!-- Copyright -->
+    </footer>
+    <!--TODO FOOTER END -->
 
-</footer>
-<!-- Footer -->
+    <!-- Footer -->
     <!-- todo: Bootstrap Javascript cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
 </html>
