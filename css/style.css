@@ -159,12 +159,12 @@ section .row {
   width: 350px;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
 @media screen and (max-width: 375px) {
   * {
     text-align: center;
-  }
-  .row {
-    --bs-gutter-x: 0;
   }
   .futuer-section .row,
   .phone-section .row {
