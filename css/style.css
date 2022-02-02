@@ -20,195 +20,186 @@
 } */
 
 html {
-    font-size: 100%;
-    scroll-behavior: smooth;
+  font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-1), var(--font-2), sans-serif;
-    box-sizing: inherit;
-    line-height: 1.5;
+  font-family: var(--font-1), var(--font-2), sans-serif;
+  box-sizing: inherit;
+  line-height: 1.5;
 }
 
 .navbar-toggler {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    transition: 0.5s ease-in-out;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    border: 0;
-    box-shadow: none;
+  outline: none;
+  border: 0;
+  box-shadow: none;
 }
 
 .navbar-toggler span {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .toggler-icon {
-    position: absolute;
-    background-color: #777;
-    height: 3px;
-    width: 100%;
-    display: block;
-    border-radius: 1px;
-    left: 0;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
+  position: absolute;
+  background-color: #777;
+  height: 3px;
+  width: 100%;
+  display: block;
+  border-radius: 1px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
 }
 
 .middle-bar {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .navbar-toggler .top-bar {
-    margin-top: 0px;
-    transform: rotate(-45deg);
+  margin-top: 0px;
+  transform: rotate(-45deg);
 }
 
 .navbar-toggler .bottom-bar {
-    margin-top: 0px;
-    transform: rotate(45deg);
+  margin-top: 0px;
+  transform: rotate(45deg);
 }
 
 .navbar-toggler .middle-bar {
-    opacity: 0;
-    filter: opacity(0);
+  opacity: 0;
+  filter: opacity(0);
 }
 
 .navbar-toggler.collapsed .top-bar {
-    margin-top: -20px;
-    transform: rotate(0);
+  margin-top: -20px;
+  transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-    margin-top: 20px;
-    transform: rotate(0);
+  margin-top: 20px;
+  transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .middle-bar {
-    filter: opacity(1);
-    opacity: 1;
+  filter: opacity(1);
+  opacity: 1;
 }
 
 button:focus,
 button:active button:visited {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 header {
-    background: linear-gradient(rgb(255, 82, 93), rgb(255, 82, 93)), url(../images/bg-pattern-intro-desktop.svg);
-    background-position: center;
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom-left-radius: 100px;
+  background: linear-gradient(rgb(255, 82, 93, 0.9), rgb(255, 82, 93, 0.9)),
+    url(../images/bg-pattern-intro-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 4rem;
 }
 
 .futuer-section h1 {
-    font-size: 30px;
-    font-weight: 900;
-    font-family: Overpass;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Overpass;
 }
 
 .text-col b {
+  border: soli d;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Overpass;
+}
+
+.text-col p {
+  font-size: 16px;
+}
+section .row {
+  padding: 0 20px;
+}
+.phone-section {
+  background: url('../images/bg-pattern-circles.svg') hsl(237, 17%, 21%);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 400px;
+  background-position-x: -70px;
+  background-position-y: -200px;
+  max-height: 250px;
+  border-radius: 0 100px 0 100px;
+  margin: auto 0;
+  width: 100%;
+  margin: 100px 0;
+  color: hsl(0, 0%, 100%);
+}
+.phone-section .image-col img {
+  margin-top: -50px;
+  margin-left: 25px;
+  width: 350px;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+@media screen and (max-width: 375px) {
+  * {
+    text-align: center;
+  }
+  .futuer-section .row,
+  .phone-section .row {
+    flex-direction: column-reverse !important;
+  }
+  .phone-section {
+    margin: 60px 0;
+    padding: 0 0 20px 0;
+
+    max-height: none;
+    border-radius: 0 50px 0 50px;
+    text-align: center;
+  }
+
+  .phone-section .image-col img {
+    margin: 0;
+    margin-top: -70px;
+    width: 100%;
+    padding: 0;
+  }
+  .header-button-div button {
+    font-size: 10px;
+    padding: 5px 10px !important;
+  }
+  .text-col b {
     border: soli d;
     font-size: 20px;
     font-weight: 900;
     font-family: Overpass;
-}
+  }
 
-.text-col p {
-    font-size: 16px;
-}
-
-section .row {
-    padding: 0 20px;
-}
-
-.phone-section {
-    background: url('../images/bg-pattern-circles.svg') hsl(237, 17%, 21%);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 400px;
-    background-position-x: -70px;
-    background-position-y: -200px;
-    max-height: 250px;
-    border-radius: 0 100px 0 100px;
-    margin: auto 0;
-    width: 100%;
-    margin: 100px 0;
-    color: hsl(0, 0%, 100%);
-}
-
-.phone-section .image-col img {
-    margin-top: -50px;
-    margin-left: 25px;
-    width: 350px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #fff;
-}
-
-footer {
-    border-top-right-radius: 100px;
-}
-
-@media screen and (max-width: 375px) {
-    * {
-        text-align: center;
-    }
-    .row {
-        --bs-gutter-x: 0;
-    }
-    .futuer-section .row,
-    .phone-section .row {
-        flex-direction: column-reverse !important;
-    }
-    .phone-section {
-        margin: 60px 0;
-        padding: 0 0 20px 0;
-        max-height: none;
-        border-radius: 0 50px 0 50px;
-        text-align: center;
-    }
-    .phone-section .image-col img {
-        margin: 0;
-        margin-top: -70px;
-        width: 100%;
-        padding: 0;
-    }
-    .header-button-div button {
-        font-size: 10px;
-        padding: 5px 10px !important;
-    }
-    .text-col b {
-        border: soli d;
-        font-size: 20px;
-        font-weight: 900;
-        font-family: Overpass;
-    }
-    .text-col p {
-        font-size: 14px;
-    }
-    header p {
-        font-size: 10px;
-    }
+  .text-col p {
+    font-size: 14px;
+  }
+  header p {
+    font-size: 10px;
+  }
 }
