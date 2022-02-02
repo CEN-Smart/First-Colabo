@@ -112,7 +112,6 @@ button:active button:visited {
 }
 
 header {
-
   background: linear-gradient(rgb(255, 82, 93, 0.9), rgb(255, 82, 93, 0.9)),
     url(../images/bg-pattern-intro-desktop.svg);
   background-position: center;
